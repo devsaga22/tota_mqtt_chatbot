@@ -18,7 +18,7 @@ The codebase is strictly decoupled into distinct service boundaries to ensure th
 *   **Core Orchestration:** Java 17 / Spring Boot 3.x
 *   **Messaging Protocol:** MQTT via Eclipse Paho Client
 *   **Database Persistent Layer:** MongoDB Atlas (Cloud Managed Cluster)
-*   **Broker Infrastructure:** Docker / Eclipse Mosquitto
+*   **Broker Infrastructure:** Docker / Eclipse Mosquitto container from Docker hub
 *   **Frontend UI:** react
 
 ---
@@ -43,4 +43,4 @@ The backend engine utilizes a highly modular client layer to decouple the core c
 Navigate into the configuration directory and spin up the Docker network:
 ```bash
 cd mqtt_conf
-docker compose up -d --force-recreate
+docker compose up -d
